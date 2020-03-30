@@ -1,0 +1,26 @@
+{
+  "name": "touitter",
+  "version": "1.0.0",
+  "description": "messagerie instantanée",
+  "main": "index.js",
+  "scripts": {
+    "concat": "cat css/* > style.css",
+    "minify": "uglifycss style.css > dist/style.min.css",
+    "convert": "css-to-scss css/* > scss",
+    "build:css": "npm run concat && npm run prefix && npm run minify",
+    "scss": "node-sass --output-style compressed -o css scss",
+    "watch:css": "onchange 'css/*.css' -- npm run scss",
+    "start": "npm run watch:css"
+  },
+  "author": "ali-taggaz",
+  "license": "ISC",
+  "devDependencies": {
+    "cat": "^0.2.0",
+    "node-sass": "^4.13.1",
+    "onchange": "^6.1.0",
+    "uglifycss": "0.0.29",
+    "css-to-scss": "^0.5.1",
+    "postcss": "^7.0.27"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,64 @@
+/* Choisir deux police */
+/* Couleurs */
+/* Créer un logo */
+/* intégré des smily en unicode */
+
+/* GENERAL */
+
+/* CONTAINER */
+
+.container {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* HEADER */
+
+header {
+    background-color: royalblue;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.entete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+
+
+
+/* MESSAGERIE */
+
+.messagerie {
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding-top: 5rem;
+}
+
+.btn {
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 3rem;
+
+}
+
+
+
+
+/*  */
