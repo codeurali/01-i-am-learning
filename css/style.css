@@ -1,5 +1,10 @@
+:root {
+    --dark-grey: #343a40;
+    --light: #f8f9fa;
+    --orange: #fd7e15;
+}
+
 /* Choisir deux police */
-/* Couleurs */
 /* Créer un logo */
 /* intégré des smily en unicode */
 
@@ -16,7 +21,7 @@
 /* HEADER */
 
 header {
-    background-color: royalblue;
+    color : var(--dark-grey);
     padding-top: 1em;
     padding-bottom: 1em;
     display: flex;
@@ -27,11 +32,28 @@ header {
 .entete {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 80vw;
 }
 
+.menu-nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+
+.btn {
+    color: var(--dark-grey);
+    text-decoration: none;
+    margin-right: .2em;
+    padding: .5em;
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--orange);
+}
 
 
 /* MESSAGERIE */
@@ -46,26 +68,32 @@ header {
     margin-bottom: 1em;
 }
 
-.menu-nav {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5rem;
-}
 
-.btn {
-    background-color: teal;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-right: .2em;
-    padding: .5em;
-}
+
+
 
 /* TOUIT-LIST */
 
 
-.touit {
-    border: 1px black solid;
+.touit-list > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 1px 10px 10px var(--light) ;
+    border-radius: 2%;
     padding: .4em;
     margin-bottom: 1em;
+}
+
+.remove-touit {
+    padding: .2em;
+    background-color: var(--orange);
+    border: none;
+}
+
+.remove-touit:hover,
+.remove-touit:focus {
+    background-color: var(--dark-grey);
+    cursor: pointer;
 }
