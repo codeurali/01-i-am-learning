@@ -22,19 +22,17 @@
         <div class="container">
             <ul class='touit-list' id='touit-list'>
                 <li class='touit' id='touit'>
+                    <small>pseudo</small>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore quae dolore iste explicabo adipisci nemo quos quas aliquam saepe exercitationem, ex corrupti laudantium fugiat voluptatibus voluptates fuga. Deserunt, repellendus.</p>
-                    <button type='button' class='remove-touit' id='delete-touit'></button>
+                    <button class='remove-touit' id='delete-touit'></button>
                 </li>
-                
             </ul>
         </div>
-    </section>
-    <section class=''>
-        <div class="container">
-            <input type="text" class="pseudo" placeholder="Entrez un nom d'utilisateur">
+        <form class='submit-touit' id='form-touit'>
+            <input type="text" id="name" placeholder="Votre pseudo">
             <input type="text" id='touit-text' placeholder="Touitez...">
-            <button id='submit-touit'>Touit</button>
-        </div>
+            <button type='submit'>Touit</button>
+        </form>
     </section>
 </body>
     <script src='js/script.js'></script>

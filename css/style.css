@@ -60,6 +60,8 @@ header {
 
 .messagerie {
     width: 60vw;
+    display: flex;
+    flex-direction: column;
     margin-right: auto;
     margin-left: auto;
 }
@@ -68,12 +70,7 @@ header {
     margin-bottom: 1em;
 }
 
-
-
-
-
 /* TOUIT-LIST */
-
 
 .touit-list > li {
     display: flex;
@@ -87,7 +84,8 @@ header {
 }
 
 .remove-touit {
-    padding: .2em;
+    padding: .3em;
+    border-radius: 50%;
     background-color: var(--orange);
     border: none;
 }
@@ -95,5 +93,29 @@ header {
 .remove-touit:hover,
 .remove-touit:focus {
     background-color: var(--dark-grey);
+    transition: .3s;
     cursor: pointer;
 }
+
+
+/* FORM */
+
+.sumbit-touit {
+    text-align: center;
+} 
+
+.submit-touit button {
+    border: none;
+    padding: .5rem;
+    background-color: var(--orange);
+    color: var(--light);
+    border-radius: 10%;
+}
+
+.submit-touit button:hover,
+.submit-touit button:focus {
+    background-color: var(--dark-grey);
+    color: var(--light);
+    padding: .55rem;
+    transition: 150ms;
+} 
