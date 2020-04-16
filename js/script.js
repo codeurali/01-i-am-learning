@@ -1,9 +1,7 @@
-const touitText = document.getElementById('touit-text');
 const touitList = document.getElementById('touit-list');
-const touitDelete = document.getElementById('delete-touit');
 const myForm = document.getElementById('form-touit')
+const touitText = document.getElementById('touit-text');
 const name = document.getElementById('name')
-
 
 function addNote(event) {
 // Prévient le rechargement de la page à chaque submit
@@ -12,14 +10,22 @@ function addNote(event) {
     const touitLi = document.createElement('li');
     const newName = document.createElement('small');
     const newTouit = document.createElement('p');
-// Relie les informations du DOM et du DOM phantôme 
+    const newBtn = document.createElement('button');
+// Récupère les info de l'html, css et du DOM
     touitLi.className = 'touit'; 
+    newBtn.className = 'remove-touit'
     newName.textContent = name.value;
     newTouit.textContent = touitText.value;
 // Incrémente les éléments du DOM phantôme dans le DOM 'réél'
-    touitList.appendChild(newName)
-    touitList.appendChild(newTouit);
+    touitLi.appendChild(newName);
+    touitLi.appendChild(newBtn);
+    touitLi.appendChild(newTouit);
     touitList.appendChild(touitLi);
+
+// Permet de supprimer un touit
+    newBtn.addEventListener('click', function() {
+        touitList.removeChild(touitLi);
+    });
 };
 
 myForm.addEventListener('submit', addNote);

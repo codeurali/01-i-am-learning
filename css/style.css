@@ -97,6 +97,12 @@ header {
     cursor: pointer;
 }
 
+/* TOUIT */
+
+.touit {
+    display: grid;
+}
+
 
 /* FORM */
 
